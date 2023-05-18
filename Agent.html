@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Valor.gg</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Agent_style.css">
+    
+
+
+
+
+    <header>
+      <h1>
+          <nav>
+              <ul>
+                <div>
+                  <img src="home button.png" alt="homebutton" class="homebutton">
+                  <a href="valor.html">
+                      <img src="Logo_merah.jpg" alt="Valor.gg logo" class="logomerah">
+                  </a>
+                </div>
+                    <a href="Weapons.html">
+                      <button class="navbtn">Weapons</button>
+                    </a>
+                    
+                    <a href="Maps.html">  
+                      <button class="navbtn">Maps</button>
+                    </a>
+
+                    <a href="Agent.html">
+                      <button class="navbtn">Agents</button>
+                    </a>
+              </ul>
+          </nav>
+          
+      </h1>
+  </header>
+
+  <div class="sidebar">
+    <ul>
+      <li class="agentclass"><a href="#section1"><img src="duelist.webp"> Duelist</a></li>
+      <li><a href="#section1"><img src="Raze_icon.webp"> Raze</a></li>
+      <li><a href="#section2"><img src="Jett_icon.webp"> Jett</a></li>
+      <li><a href="#section3"><img src="phx_icon.webp"> Pheonix</a></li>
+      <li><a href="#section4"><img src="Neon_icon.webp"> Neon</a></li>
+      <li><a href="#section5"><img src="Yoru_icon.webp"> Yoru</a></li>
+      <li><a href="#section6"><img src="Reyna_icon.webp"> Reyna</a></li>
+      <p class="para3"></p>
+      <li class="agentclass"><a href="#section7"><img src="controller.webp"> Controllers</a></li>
+      <li><a href="#section7"><img src="Astra_icon.webp"> Astra</a></li>
+      <li><a href="#section8"><img src="Harbor_icon.webp"> Harbor</a></li>
+      <li><a href="#section9"><img src="Omen_icon.webp"> Omen</a></li>
+      <li><a href="#section10"><img src="Brimstone_icon.webp"> Brimstone</a></li>
+      <li><a href="#section11"><img src="Viper_icon.webp"> Viper</a></li>
+      <p class="para3"></p>
+      <li class="agentclass"><a href="#section12"><img src="initiator.webp"> Initiators</a></li>
+      <li><a href="#section12"><img src="Breach_icon.webp"> Breach</a></li>
+      <li><a href="#section13"><img src="Fade_icon.webp"> Fade</a></li>
+      <li><a href="#section14"><img src="KAYO_icon.webp"> Kay/O</a></li>
+      <li><a href="#section15"><img src="Gekko_icon.webp"> Gekko</a></li>
+      <li><a href="#section16"><img src="Skye_icon.webp"> Skye</a></li>
+      <li><a href="#section17"><img src="Sova_icon.webp"> Sova</a></li>
+      <p class="para3"></p>
+      <li class="agentclass"><a href="#section18"><img src="sentinels.webp"> Sentinels</a></li>
+      <li><a href="#section18"><img src="Chamber_icon.webp"> Chamber</a></li>
+      <li><a href="#section19"><img src="Cypher_icon.webp"> Cypher</a></li>
+      <li><a href="#section20"><img src="Sage_icon.webp"> Sage</a></li>
+      <li><a href="#section21"><img src="Killjoy_icon.webp"> Killjoy</a></li>
+    </ul>
+  </div>
+  
+  <script>
+    // Smooth scrolling on click
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+
+  <script>
+    const sidebar = document.querySelector('.sidebar');
+    
+    sidebar.addEventListener('wheel', (e) => {
+      if (sidebar.scrollHeight > sidebar.clientHeight) {
+        e.preventDefault();
+        
+        const maxScrollTop = sidebar.scrollHeight - sidebar.clientHeight;
+        const delta = Math.sign(e.deltaY);
+        sidebar.scrollTop += delta * 90;
+        
+        // Prevent scrolling the main content when at the top or bottom of the sidebar
+        if ((delta === -1 && sidebar.scrollTop === 0) ||
+            (delta === 1 && sidebar.scrollTop === maxScrollTop)) {
+          e.stopPropagation();
+        }
+      }
+    });
+  </script>
+
+
+<ul class="list">
+  <section id="section1"></section>
+  <div class="roles">Duelist</div>   
+  <li>
+      <div class="item">
+        <img src="Raze.webp" alt="Image 3">
+        <h3>RAZE</h3>
+        <p>Raze explodes out of Brazil with her big personality and big guns. With her blunt-force-trauma playstyle, she excels at flushing entrenched enemies and clearing tight spaces with a generous dose of “boom.”</p>
+        <iframe width="900" height="500" src="https://www.youtube.com/embed/vUX_ISwLiMg" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="skillword">
+        <p class="skillwordmain"><span class="keybind"><img src="raze_C.webp" alt="Image_SKILL"> C</span><span class="keybindword">BOOM BOT</span></p>
+        <p class="description">EQUIP a Boom Bot. FIRE will deploy the bot, causing it to travel in a straight line on the ground, bouncing off walls. The Boom Bot will lock on to any enemies in its frontal cone and chase them, exploding for heavy damage if it reaches them.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="raze_Q.webp" alt="Image_SKILL"> Q</span><span class="keybindword">BLAST PACK</span></p>
+        <p class="description">INSTANTLY throw a Blast Pack that will stick to surfaces. RE-USE the ability after deployment to detonate, damaging and moving anything hit.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="raze_E.webp" alt="Image_SKILL"> E</span><span class="keybindword">PAINT SHELLS</span></p>
+        <p class="description">EQUIP a cluster grenade. FIRE to throw the grenade, which does damage and creates sub-munitions, each doing damage to anyone in their range. ALT FIRE to lob.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="raze_x.webp" alt="Image_SKILL"> X</span><span class="keybindword">SHOWSTOPPER</span></p>
+        <p class="description">EQUIP a rocket launcher. FIRE shoots a rocket that does massive area damage on contact with anything.</p>
+      </div>
+    </li>
+    <section id="section2"></section>
+    <p class="para2"></p>
+    <li>
+      <div class="item">
+        <img src="JETT.jpg" alt="Image 3">
+        <h3>JETT</h3>
+        <p>Representing her home country of South Korea, Jett's agile and evasive fighting style lets her take risks no one else can. She runs circles around every skirmish, cutting enemies before they even know what hit them.</p>
+        <iframe width="900" height="500" src="https://www.youtube.com/embed/z89pv9wpxLk" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="skillword">
+        <p class="skillwordmain"><span class="keybind"><img src="jett_C.webp" alt="Image_SKILL"> C</span><span class="keybindword">CLOUDBURST</span></p>
+        <p class="description">INSTANTLY throw a projectile that expands into a brief vision-blocking cloud on impact with a surface. HOLD the ability key to curve the smoke in the direction of your crosshair.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="jett_Q.webp" alt="Image_SKILL"> Q</span><span class="keybindword">UPDRAFT</span></p>
+        <p class="description">INSTANTLY propel Jett high into the air.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="jett_E.webp" alt="Image_SKILL"> E</span><span class="keybindword">TAILWIND</span></p>
+        <p class="description">ACTIVATE to prepare a gust of wind for a limited time. RE-USE the wind to propel Jett in the direction she is moving. If Jett is standing still, she propels forward.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="jett_x.webp" alt="Image_SKILL"> X</span><span class="keybindword">BLADE STORM</span></p>
+        <p class="description">EQUIP a set of highly accurate throwing knives. FIRE to throw a single knife and recharge knives on a kill. ALTERNATE FIRE to throw all remaining daggers but does not recharge on a kill.</p>
+      </div>
+    </li>
+    <section id="section3"></section>
+    <p class="para2"></p>
+    <li>
+      <div class="item">
+        <img src="phx.jpg" alt="Image 3">
+        <h3>PHEONIX</h3>
+        <p>Hailing from the U.K., Phoenix's star power shines through in his fighting style, igniting the battlefield with flash and flare. Whether he's got backup or not, he'll rush into a fight on his own terms.</p>
+        <iframe width="900" height="500" src="https://www.youtube.com/embed/rn-frThksdQ" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="skillword">
+        <p class="skillwordmain"><span class="keybind"><img src="phx_C.webp" alt="Image_SKILL"> C</span><span class="keybindword">BLAZE</span></p>
+        <p class="description">EQUIP a flame wall. FIRE to create a line of flame that moves forward, creating a wall of fire that blocks vision and damages players passing through it. HOLD FIRE to bend the wall in the direction of your crosshair.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="phx_Q.webp" alt="Image_SKILL"> Q</span><span class="keybindword">CURVE BALL</span></p>
+        <p class="description">EQUIP a flare orb that takes a curving path and detonates shortly after throwing. FIRE to curve the flare orb to the left, detonating and Blinding any player who sees the orb. ALT FIRE to curve the flare orb to the right.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="phx_E.webp" alt="Image_SKILL"> E</span><span class="keybindword">HOT HANDS</span></p>
+        <p class="description">EQUIP a fireball. FIRE to throw a fireball that explodes after a set amount of time or upon hitting the ground, creating a lingering fire zone that damages enemies. ALT FIRE to lob.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="phx_x.webp" alt="Image_SKILL"> X</span><span class="keybindword">RUN IT BACK</span></p>
+        <p class="description">INSTANTLY place a marker at Phoenix's location. While this ability is active, dying or allowing the timer to expire will end this ability and bring Phoenix back to this location with full health and the amount of armor he had when the ability was cast.</p>
+      </div>
+    </li>
+    <section id="section4"></section>
+    <p class="para2"></p>
+    <li>
+      <div class="item">
+        <img src="neon.webp" alt="Image 3">
+        <h3>NEON</h3>
+        <p>	Filipino Agent, Neon, surges forward at shocking speeds, discharging bursts of bioelectric radiance as fast as her body generates it. She races ahead to catch enemies off guard, then strikes them down quicker than lightning.</p>
+        <iframe width="900" height="500" src="https://www.youtube.com/embed/EY8OwXeQIJw" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="skillword">
+        <p class="skillwordmain"><span class="keybind"><img src="neon_C.webp" alt="Image_SKILL"> C</span><span class="keybindword">FAST LANE</span></p>
+        <p class="description">FIRE two energy lines forward on the ground that extend a short distance or until they hit a surface. The lines rise into walls of static electricity that block vision.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="neon_Q.webp" alt="Image_SKILL"> Q</span><span class="keybindword">RELAY BOLT</span></p>
+        <p class="description">INSTANTLY throw an energy bolt that bounces once. Upon hitting each surface, the bolt electrifies the ground below with a Concussive blast.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="neon_E.webp" alt="Image_SKILL"> E</span><span class="keybindword">HIGH GEAR</span></p>
+        <p class="description">INSTANTLY channel Neon's power for increased speed. When charged, ALT FIRE to trigger an electric slide. Slide charge resets every two kills.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="neon_x.webp" alt="Image_SKILL"> X</span><span class="keybindword">OVERDRIVE</span></p>
+        <p class="description">Unleash Neon's full power and speed for a short duration. FIRE to channel the power into a deadly lightning beam with high movement accuracy.</p>
+      </div>
+    </li>
+    <section id="section5"></section>
+    <p class="para2"></p>
+    <li>
+      <div class="item">
+        <img src="yoru.webp" alt="Image 3">
+        <h3>YORU</h3>
+        <p>	Japanese native Yoru rips holes straight through reality to infiltrate enemy lines unseen. Using deception and aggression in equal measure, he gets the drop on each target before they know where to look.</p>
+        <iframe width="900" height="500" src="https://www.youtube.com/embed/1pZFCZ6sghc" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="skillword">
+        <p class="skillwordmain"><span class="keybind"><img src="yoru_C.webp" alt="Image_SKILL"> C</span><span class="keybindword">FAKEOUT</span></p>
+        <p class="description">EQUIP an echo that transforms into a mirror image of Yoru when activated. FIRE to instantly activate the mirror image and send it forward. ALT FIRE to place an inactive echo. USE to transform an inactive echo into a mirror image and send it forward. Mirror images explode in a Blinding Flash when destroyed by enemies.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="yoru_Q.webp" alt="Image_SKILL"> Q</span><span class="keybindword">BLINDSIDE</span></p>
+        <p class="description">EQUIP to rip an unstable dimensional fragment from reality. FIRE to throw the fragment, activating a flash that winds up once it collides with a hard surface in world.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="yoru_E.webp" alt="Image_SKILL"> E</span><span class="keybindword">GATECRASH</span></p>
+        <p class="description">EQUIP a rift tether FIRE to send the tether forward ALT FIRE to place a stationary tether ACTIVATE to teleport to the tether's location USE to trigger a fake teleport.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="yoru_x.webp" alt="Image_SKILL"> X</span><span class="keybindword">DIMENSIONAL DRIFT</span></p>
+        <p class="description">EQUIP a mask that can see between dimensions. FIRE to drift into Yoru's dimension, unable to be affected or seen by enemies from the outside.</p>
+      </div>
+    </li>
+    <section id="section6"></section>
+    <p class="para2"></p>
+    <li>
+      <div class="item">
+        <img src="reyna.webp" alt="Image 3">
+        <h3>REYNA</h3>
+        <p>	Forged in the heart of Mexico, Reyna dominates single combat, popping off with each kill she scores. Her capability is only limited by her raw skill, making her highly dependent on performance.</p>
+        <iframe width="900" height="500" src="https://www.youtube.com/embed/GNQF9MLxIiw" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="skillword">
+        <p class="skillwordmain"><span class="keybind"><img src="reyna_C.webp" alt="Image_SKILL"> C</span><span class="keybindword">LEER</span></p>
+        <p class="description">EQUIP an ethereal, destructible eye. ACTIVATE to cast the eye a short distance forward. The eye will Nearsight all enemies who look at it.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="reyna_Q.webp" alt="Image_SKILL"> Q</span><span class="keybindword">DEVOUR</span></p>
+        <p class="description">INSTANTLY consume a nearby soul orb, rapidly Healing for a short duration. Health gained through this skill exceeding 100 will decay over time. If Empress.png Empress is active, this skill will automatically cast and not consume the Soul Orb.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="reyna_E.webp" alt="Image_SKILL"> E</span><span class="keybindword">DISMISS</span></p>
+        <p class="description">INSTANTLY consume a nearby Soul Orb, becoming Intangible for a short duration. If Empress.png Empress is active, also become Invisible.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="reyna_x.webp" alt="Image_SKILL"> X</span><span class="keybindword">EMPRESS</span></p>
+        <p class="description">INSTANTLY enter a frenzy, gaining a Combat Stim that increases firing, equip and reload speed dramatically. Gain infinite charges of Soul Harvest abilities. When an enemy dies to Reyna, or dies within 3 seconds of taking damage from Reyna, the duration is renewed.</p>
+      </div>
+    </li>
+    <section id="section7"></section>
+    <p class="para1"></p>
+    <div class="roles">Controllers</div>
+    <li>
+      <div class="item">
+        <img src="astra.webp" alt="Image 3">
+        <h3>ASTRA</h3>
+        <p>Ghanaian Agent Astra harnesses the energies of the cosmos to reshape battlefields to her whim. With full command of her astral form and a talent for deep strategic foresight, she’s always eons ahead of her enemy’s next move.</p>
+        <iframe width="900" height="500" src="https://www.youtube.com/embed/-WrMqOxKzuI" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="skillword">
+        <p class="skillwordmain"><span class="keybind"><img src="astra_C.webp" alt="Image_SKILL"> C</span><span class="keybindword">GRAVITY WELL</span></p>
+        <p class="description">ACTIVATE a Stars Star to form a Gravity Well. Players in the area are pulled toward the center before it explodes, making all players still trapped inside Vulnerable.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="astra_Q.webp" alt="Image_SKILL"> Q</span><span class="keybindword">NOVA PULSE</span></p>
+        <p class="description">ACTIVATE a Stars Star to detonate a Nova Pulse. The Nova Pulse charges briefly then strikes, Concussing all players in its area.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="astra_E.webp" alt="Image_SKILL"> E</span><span class="keybindword">NEBULA / DISSIPATE</span></p>
+        <p class="description">ACTIVATE a Stars Star to transform it into a Nebula (smoke).USE a Star to Dissipate it, returning the Star to be placed in a new location after a delay.Dissipate briefly forms a fake Nebula at the Star's location before returning.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="astra_x.webp" alt="Image_SKILL"> X</span><span class="keybindword">STARS / COSMIC DIVIDE</span></p>
+        <p class="description">Place Stars in Astral Form with PRIMARY FIRE. Stars can be reactivated later, transforming them into a Nova Pulse Nova Pulse, Nebula - Dissipate Nebula, or Gravity Well Gravity Well.When Cosmic Divide is charged, use SECONDARY FIRE in Astral Form to begin aiming it, then PRIMARY FIRE to select two locations. An infinite Cosmic Divide connects the two points you select. Cosmic Divide blocks bullets and heavily dampens audio.</p>
+      </div>
+    </li>
+    <section id="section8"></section>
+    <p class="para2"></p>
+    <li>
+      <div class="item">
+        <img src="harbor.webp" alt="Image 3">
+        <h3>HARBOR</h3>
+        <p>	Hailing from India's coast, Harbor storms the field wielding ancient technology with dominion over water. He unleashes frothing rapids and crushing waves to shield his allies and to pummel those that oppose him.</p>
+        <iframe width="900" height="500" src="https://www.youtube.com/embed/rxIkLjXAoIs" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="skillword">
+        <p class="skillwordmain"><span class="keybind"><img src="harbor_C.webp" alt="Image_SKILL"> C</span><span class="keybindword">CASCADE</span></p>
+        <p class="description">EQUIP a wave of water. FIRE to send the wave rolling forward and through walls. RE-USE to stop the wave. Players hit are Slowed.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="harbor_Q.webp" alt="Image_SKILL"> Q</span><span class="keybindword">COVE</span></p>
+        <p class="description">EQUIP a sphere of shielding water. FIRE to throw. ALT FIRE to underhand throw. Upon impacting the ground, spawn a destructible water shield that blocks bullets.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="harbor_E.webp" alt="Image_SKILL"> E</span><span class="keybindword">HIGH TIDE</span></p>
+        <p class="description">EQUIP a wall of water. FIRE to send the water forward along the ground. HOLD FIRE to guide the water in the direction of your crosshair, passing through the world, spawning a wall along the water's path. ALT FIRE while bending to stop the water early. Players hit are Slowed.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="harbor_x.webp" alt="Image_SKILL"> X</span><span class="keybindword">RECKONING</span></p>
+        <p class="description">EQUIP the full power of your Artifact. FIRE to summon a geyser pool on the ground. Enemy players in the area are targeted by successive geyser strikes. Players caught within a strike are Concussed.</p>
+      </div>
+    </li>
+    <section id="section9"></section>
+    <p class="para2"></p>
+    <li>
+      <div class="item">
+        <img src="omen.webp" alt="Image 3">
+        <h3>OMEN</h3>
+        <p>	A phantom of a memory, Omen hunts in the shadows. He renders enemies blind, teleports across the field, then lets paranoia take hold as his foe scrambles to learn where he might strike next.</p>
+        <iframe width="900" height="500" src="https://www.youtube.com/embed/lnsJCRnY_ww" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="skillword">
+        <p class="skillwordmain"><span class="keybind"><img src="omen_C.webp" alt="Image_SKILL"> C</span><span class="keybindword">SHROUDED STEPS</span></p>
+        <p class="description">EQUIP a shrouded step ability and see its range indicator. FIRE to begin a brief channel, then teleport to the marked location.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="omen_Q.webp" alt="Image_SKILL"> Q</span><span class="keybindword">PARANOIA</span></p>
+        <p class="description">EQUIP a blinding orb. FIRE to throw it forward, briefly Nearsighting and Deafening all players it touches. This projectile can pass straight through walls.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="omen_E.webp" alt="Image_SKILL"> E</span><span class="keybindword">DARK COVER</span></p>
+        <p class="description">EQUIP a shadow orb, entering a phased world to place and target the orbs. PRESS the ability key to throw the shadow orb to the marked location, creating a long-lasting shadow sphere that blocks vision. HOLD FIRE while targeting to move the marker further away. HOLD SECONDARY FIRE while targeting to move the marker closer. PRESS RELOAD to toggle normal targeting view.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="omen_x.webp" alt="Image_SKILL"> X</span><span class="keybindword">FROM THE SHADOWS</span></p>
+        <p class="description">EQUIP a tactical map. FIRE to begin teleporting to the selected location. While teleporting, Omen will appear as a Shade that can be destroyed by an enemy to cancel his teleport, or PRESS EQUIP for Omen to cancel his teleport.</p>
+      </div>
+    </li>
+    <section id="section10"></section>
+    <p class="para2"></p>
+    <li>
+      <div class="item">
+        <img src="brim.webp" alt="Image 3">
+        <h3>BRIMSTONE</h3>
+        <p>Joining from the USA, Brimstone's orbital arsenal ensures his squad always has the advantage. His ability to deliver utility precisely and from a distance make him an unmatched boots-on-the-ground commander.</p>
+        <iframe width="900" height="500" src="https://www.youtube.com/embed/duSordwEZl4" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="skillword">
+        <p class="skillwordmain"><span class="keybind"><img src="brim_C.webp" alt="Image_SKILL"> C</span><span class="keybindword">STIM BEACON</span></p>
+        <p class="description">INSTANTLY toss down a stim beacon. Upon landing, it creates a field that grants players a Combat Stim and a Speed Boost.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="brim_Q.webp" alt="Image_SKILL"> Q</span><span class="keybindword">INCENDIARY</span></p>
+        <p class="description">EQUIP an incendiary grenade launcher. FIRE to launch a grenade that detonates as it comes to a rest on the floor, creating a lingering fire zone that damages players within the zone.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="brim_E.webp" alt="Image_SKILL"> E</span><span class="keybindword">SKY SMOKE</span></p>
+        <p class="description">EQUIP a tactical map. FIRE to set locations where Brimstone's smoke clouds will land. ALTERNATE FIRE to confirm, launching long-lasting smoke clouds that block vision in the selected area.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="brim_x.webp" alt="Image_SKILL"> X</span><span class="keybindword">ORBITAL STRIKE</span></p>
+        <p class="description">EQUIP a tactical map. FIRE to launch a lingering orbital strike laser at the selected location, dealing high damage-over-time to players caught in the selected area.</p>
+      </div>
+    </li>
+    <section id="section11"></section>
+    <p class="para2"></p>
+    <li>
+      <div class="item">
+        <img src="viper.webp" alt="Image 3">
+        <h3>VIPER</h3>
+        <p>	The American chemist, Viper deploys an array of poisonous chemical devices to control the battlefield and cripple the enemy's vision. If the toxins don't kill her prey, her mind games surely will.</p>
+        <iframe width="900" height="500" src="https://www.youtube.com/embed/YDYtjp04wBY" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="skillword">
+        <p class="skillwordmain"><span class="keybind"><img src="viper_C.webp" alt="Image_SKILL"> C</span><span class="keybindword">SNAKE BITE</span></p>
+        <p class="description">EQUIP a chemical launcher. FIRE to launch a canister that shatters upon hitting the floor, creating a lingering chemical zone that damages and applies Vulnerable.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="viper_Q.webp" alt="Image_SKILL"> Q</span><span class="keybindword">POISON CLOUD</span></p>
+        <p class="description">EQUIP a gas emitter. FIRE to throw the emitter that perpetually remains throughout the round. ALT FIRE to lob. RE-USE the ability to create a toxic gas cloud at the cost of fuel. This ability can be RE-USED more than once and can be picked up to be REDEPLOYED.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="viper_E.webp" alt="Image_SKILL"> E</span><span class="keybindword">TOXIC SCREEN</span></p>
+        <p class="description">EQUIP a gas emitter launcher that penetrates terrain. FIRE to deploy a long line of gas emitters. RE-USE the ability to create a tall wall of toxic gas at the cost of fuel. This ability can be RE-USED more than once.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="viper_x.webp" alt="Image_SKILL"> X</span><span class="keybindword">VIPER'S PIT</span></p>
+        <p class="description">EQUIP a chemical sprayer. FIRE to spray a chemical cloud in all directions around Viper, creating a large cloud that Nearsights players and Decays the health of enemies inside of it. HOLD the ability key to disperse the cloud early.</p>
+      </div>
+    </li>
+    <section id="section12"></section>
+    <p class="para1"></p>
+    <div class="roles">Initiators</div>
+    <li>
+      <div class="item">
+        <img src="breach.webp" alt="Image 3">
+        <h3>BREACH</h3>
+        <p>Breach, the bionic Swede, fires powerful, targeted kinetic blasts to aggressively clear a path through enemy ground. The damage and disruption he inflicts ensures no fight is ever fair.</p>
+        <iframe width="900" height="500" src="https://www.youtube.com/embed/ip_tNeDLRtM" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="skillword">
+        <p class="skillwordmain"><span class="keybind"><img src="breach_C.webp" alt="Image_SKILL"> C</span><span class="keybindword">AFTERSHOCK</span></p>
+        <p class="description">EQUIP a fusion charge. FIRE the charge to set a slow-acting burst through the wall. The burst does heavy damage to anyone caught in its area.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="breach_Q.webp" alt="Image_SKILL"> Q</span><span class="keybindword">FLASHPOINT</span></p>
+        <p class="description">EQUIP a blinding charge. FIRE the charge to set a fast-acting burst through the wall. The charge detonates to Blind all players looking at it.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="breach_E.webp" alt="Image_SKILL"> E</span><span class="keybindword">FAULT LINE</span></p>
+        <p class="description">EQUIP a seismic blast. HOLD FIRE to increase the distance. RELEASE to set off the quake, Concussing all players in its zone and in a line up to the zone.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="breach_x.webp" alt="Image_SKILL"> X</span><span class="keybindword">ROLLING THUNDER</span></p>
+        <p class="description">EQUIP a Seismic Charge. FIRE to send a cascading quake through all terrain in a large cone. The quake Concusses and knocks up anyone caught in it.</p>
+      </div>
+    </li>
+    <section id="section13"></section>
+    <p class="para2"></p>
+    <li>
+      <div class="item">
+        <img src="fade.webp" alt="Image 3">
+        <h3>FADE</h3>
+        <p>	Turkish bounty hunter Fade unleashes the power of raw nightmare to seize enemy secrets. Attuned with terror itself, she hunts down targets and reveals their deepest fears - before crushing them in the dark.</p>
+        <iframe width="900" height="500" src="https://www.youtube.com/embed/ctQ08uuWc7A" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="skillword">
+        <p class="skillwordmain"><span class="keybind"><img src="fade_C.webp" alt="Image_SKILL"> C</span><span class="keybindword">PROWLER</span></p>
+        <p class="description">EQUIP a prowler. FIRE to send the prowler forward. HOLD FIRE to steer the prowler towards your crosshair. The prowler will chase down the first enemy or terror trail it sees, and nearsight the enemy on impact.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="fade_Q.webp" alt="Image_SKILL"> Q</span><span class="keybindword">SEIZE</span></p>
+        <p class="description">EQUIP a knot of raw fear. FIRE to throw. The knot drops down after a set time. RE-USE to drop the knot early. The knot ruptures on impact, holding nearby enemies in place. Held enemies are Deafened, and Decayed.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="fade_E.webp" alt="Image_SKILL"> E</span><span class="keybindword">HAUNT</span></p>
+        <p class="description">EQUIP a haunting watcher. FIRE to throw. The watcher drops down after a set time. RE-USE to drop the watcher early. The watcher lashes out on impact, Revealing enemies in its line of sight and creating terror trails to them. Enemies can destroy the watcher.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="fade_x.webp" alt="Image_SKILL"> X</span><span class="keybindword">NIGHTFALL</span></p>
+        <p class="description">EQUIP the power of nightmare itself. FIRE to unleash a wave of unstoppable nightmare energy. Enemies caught in the wave are Marked by terror trails, Deafened, and Decayed.</p>
+      </div>
+    </li>
+    <section id="section14"></section>
+    <p class="para2"></p>
+    <li>
+      <div class="item">
+        <img src="kayo.webp" alt="Image 3">
+        <h3>KAY/O</h3>
+        <p>	KAY/O is a machine of war built for a single purpose: neutralizing radiants. His power to suppress enemy abilities cripples his opponents' capacity to fight back, securing him and his allies the ultimate edge.</p>
+        <iframe width="900" height="500" src="https://www.youtube.com/embed/y-n4jxHW3mU" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="skillword">
+        <p class="skillwordmain"><span class="keybind"><img src="kayo_C.webp" alt="Image_SKILL"> C</span><span class="keybindword">FRAG/MENT</span></p>
+        <p class="description">EQUIP an explosive fragment. FIRE to throw. ALT FIRE to lob.The fragment sticks to the floor and explodes multiple times, dealing near lethal damage at the center with each explosion.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="kayo_Q.webp" alt="Image_SKILL"> Q</span><span class="keybindword">FLASH/DRIVE</span></p>
+        <p class="description">EQUIP a flash grenade. FIRE to overhand throw. ALT FIRE to underhand throw a weaker version that explodes quickly. The flash grenade explodes after a short fuse, Blinding anyone in line of sight.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="kayo_E.webp" alt="Image_SKILL"> E</span><span class="keybindword">ZERO/POINT</span></p>
+        <p class="description">EQUIP a suppression blade. FIRE to throw. The blade sticks to the first surface it hits, winds up, and suppresses anyone in the radius of the explosion.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="kayo_x.webp" alt="Image_SKILL"> X</span><span class="keybindword">NULL/CMD</span></p>
+        <p class="description">INSTANTLY Overload with polarized radianite energy that pulses from KAY/O in a massive radius. Enemies hit with pulses are suppressed for a short duration. While overloaded, KAY/O gains Combat Stim and can be re-stabilized if downed.</p>
+      </div>
+    </li>
+    <section id="section15"></section>
+    <p class="para2"></p>
+    <li>
+      <div class="item">
+        <img src="gekko.webp" alt="Image 3">
+        <h3>GEKKO</h3>
+        <p>	Gekko the Angeleno leads a tight-knit crew of calamitous creatures. His buddies bound forward, scattering enemies out of the way, with Gekko chasing them down to regroup and go again.</p>
+        <iframe width="900" height="500" src="https://www.youtube.com/embed/sSfT_YgUHDI" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="skillword">
+        <p class="skillwordmain"><span class="keybind"><img src="gekko_C.webp" alt="Image_SKILL"> C</span><span class="keybindword">MOSH PIT</span></p>
+        <p class="description">EQUIP Mosh. FIRE to throw Mosh like a grenade. ALT FIRE to throw underhand. Upon landing Mosh duplicates across a large area then after a short delay explodes.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="gekko_Q.webp" alt="Image_SKILL"> Q</span><span class="keybindword">WINGMAN</span></p>
+        <p class="description">EQUIP Wingman. FIRE to send Wingman forward seeking enemies. Wingman unleashes a Concussive blast toward the first enemy he sees. ALT FIRE when targeting a Spike site or planted Spike to have Wingman defuse or plant the Spike. To plant, Gekko must have the Spike in his inventory.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="gekko_E.webp" alt="Image_SKILL"> E</span><span class="keybindword">DIZZY</span></p>
+        <p class="description">EQUIP Dizzy. FIRE to send Dizzy soaring forward through the air. Dizzy charges then unleashes plasma blasts at enemies in line of sight. Enemies hit by her plasma are Blinded.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="gekko_x.webp" alt="Image_SKILL"> X</span><span class="keybindword">THRASH</span></p>
+        <p class="description">EQUIP Thrash. FIRE to link with Thrash's mind and steer her through enemy territory. ACTIVATE to lunge forward and explode, Detaining any players in a small radius.</p>
+      </div>
+    </li>
+    <section id="section16"></section>
+    <p class="para2"></p>
+    <li>
+      <div class="item">
+        <img src="skye.webp" alt="Image 3">
+        <h3>SKYE</h3>
+        <p>	Hailing from Australia, Skye and her band of beasts trail-blaze the way through hostile territory. With her creations hampering the enemy, and her power to heal others, the team is strongest and safest by Skye's side.</p>
+        <iframe width="900" height="500" src="https://www.youtube.com/embed/EejgaQhEHEc" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="skillword">
+        <p class="skillwordmain"><span class="keybind"><img src="skye_C.webp" alt="Image_SKILL"> C</span><span class="keybindword">REGROWTH</span></p>
+        <p class="description">EQUIP a healing trinket. HOLD FIRE to channel, Healing allies in range and line of sight. Can be reused until her healing pool is depleted. Skye cannot heal herself.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="skye_Q.webp" alt="Image_SKILL"> Q</span><span class="keybindword">TRAILBLAZER</span></p>
+        <p class="description">EQUIP a Tasmanian tiger trinket. FIRE to send out and take control of the predator. While in control, FIRE to leap forward, exploding in a Concussive blast and damaging directly hit enemies.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="skye_E.webp" alt="Image_SKILL"> E</span><span class="keybindword">GUIDING LIGHT</span></p>
+        <p class="description">
+          EQUIP a hawk trinket. FIRE to send it forward. HOLD FIRE to guide the hawk in the direction of your crosshair. RE-USE while the hawk is in flight to transform it into a flash. The flash reaches max potency after a short duration during the hawk's flight.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="skye_x.webp" alt="Image_SKILL"> X</span><span class="keybindword">SEEKERS</span></p>
+        <p class="description">EQUIP a Seeker trinket. FIRE to send out three Seekers to track down the three closest enemies. If a Seeker reaches its target, it Nearsights them.</p>
+      </div>
+    </li>
+    <section id="section17"></section>
+    <p class="para2"></p>
+    <li>
+      <div class="item">
+        <img src="sova.webp" alt="Image 3">
+        <h3>SOVA</h3>
+        <p>	Born from the eternal winter of Russia's tundra, Sova tracks, finds, and eliminates enemies with ruthless efficiency and precision. His custom bow and incredible scouting abilities ensure that even if you run, you cannot hide.</p>
+        <iframe width="900" height="500" src="https://www.youtube.com/embed/o0IvvXWTmq4" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="skillword">
+        <p class="skillwordmain"><span class="keybind"><img src="sova_C.webp" alt="Image_SKILL"> C</span><span class="keybindword">OWL DRONE</span></p>
+        <p class="description">EQUIP an owl drone. FIRE to deploy and take control of movement of the drone. While in control of the drone, FIRE to shoot a marking dart. This dart will Reveal the location of any player struck by the dart.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="sova_Q.webp" alt="Image_SKILL"> Q</span><span class="keybindword">SHOCK BOLT</span></p>
+        <p class="description">EQUIP a bow with a shock bolt. FIRE to send the explosive bolt forward, detonating upon collision and damaging players nearby. HOLD FIRE to extend the range of the projectile. ALTERNATE FIRE to add up to two bounces to this arrow.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="sova_E.webp" alt="Image_SKILL"> E</span><span class="keybindword">RECON BOLT</span></p>
+        <p class="description">EQUIP a bow with a recon bolt. FIRE to send the recon bolt forward, activating upon collision and Revealing the location of nearby enemies caught in the line of sight of the bolt. Enemies can destroy this bolt. HOLD FIRE to extend the range of the projectile. ALTERNATE FIRE to add up to two bounces to this arrow.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="sova_x.webp" alt="Image_SKILL"> X</span><span class="keybindword">HUNTER'S FURY</span></p>
+        <p class="description">EQUIP a bow with three long-range, wall-piercing energy blasts. FIRE to release an energy blast in a line in front of Sova, dealing damage and Revealing the location of enemies caught in the line. This ability can be RE-USED up to two more times while the ability timer is active.</p>
+      </div>
+    </li>
+    <section id="section18"></section>
+    <p class="para1"></p>
+    <div class="roles">Sentinels</div>
+    <li>
+      <div class="item">
+        <img src="chamber.webp" alt="Image 3">
+        <h3>CHAMBER</h3>
+        <p>Well dressed and well armed, French weapons designer Chamber expels aggressors with deadly precision. He leverages his custom arsenal to hold the line and pick off enemies from afar, with a contingency built for every plan.</p>
+        <iframe width="900" height="500" src="https://www.youtube.com/embed/ykYBEQy2plo" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="skillword">
+        <p class="skillwordmain"><span class="keybind"><img src="chamber_C.webp" alt="Image_SKILL"> C</span><span class="keybindword">TRADEMARK</span></p>
+        <p class="description">PLACE a trap that scans for enemies. When a visible enemy comes in range, the trap counts down and then destabilizes the terrain around them, creating a lingering field that Slows players caught inside of it. The trap can be picked up to be REDEPLOYED.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="chamber_Q.webp" alt="Image_SKILL"> Q</span><span class="keybindword">HEADHUNTER</span></p>
+        <p class="description">ACTIVATE to equip a heavy pistol. ALT FIRE with the pistol equipped to aim down sights.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="chamber_E.webp" alt="Image_SKILL"> E</span><span class="keybindword">RENDEZVOUS</span></p>
+        <p class="description">PLACE a teleport anchor. While on the ground and in range of the anchor, REACTIVATE to quickly teleport to the anchor. The anchor can be picked up to be REDEPLOYED.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="chamber_x.webp" alt="Image_SKILL"> X</span><span class="keybindword">TOUR DE FORCE</span></p>
+        <p class="description">ACTIVATE to summon a powerful, custom sniper rifle that will kill an enemy with any direct hit to the upper body. Killing an enemy creates a lingering field that Slows players caught inside of it.</p>
+      </div>
+    </li>
+    <section id="section19"></section>
+    <p class="para2"></p>
+    <li>
+      <div class="item">
+        <img src="cypher.webp" alt="Image 3">
+        <h3>Cypher</h3>
+        <p>	The Moroccan information broker, Cypher is a one-man surveillance network who keeps tabs on the enemy’s every move. No secret is safe. No maneuver goes unseen. Cypher is always watching.</p>
+        <iframe width="900" height="500" src="https://www.youtube.com/embed/SFyDLwSng1E" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="skillword">
+        <p class="skillwordmain"><span class="keybind"><img src="cypher_C.webp" alt="Image_SKILL"> C</span><span class="keybindword">TRAPWIRE</span></p>
+        <p class="description">EQUIP a trapwire. FIRE to place a destructible and covert tripwire at the targeted location, creating a line that spans between the placed location and the wall opposite. Enemy players who cross a tripwire will be Tethered, Revealed, and Concussed after a short period if they do not destroy the device in time. This ability can be picked up to be REDEPLOYED.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="cypher_Q.webp" alt="Image_SKILL"> Q</span><span class="keybindword">CYPHER CAGE</span></p>
+        <p class="description">INSTANTLY toss the cyber cage in front of Cypher. ACTIVATE to create a zone that blocks vision and plays an audio cue when enemies pass through it.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="cypher_E.webp" alt="Image_SKILL"> E</span><span class="keybindword">SPYCAM</span></p>
+        <p class="description">EQUIP a spycam. FIRE to place the spycam at the targeted location. RE-USE this ability to take control of the camera's view. While in control of the camera, FIRE to shoot a marking dart. This dart will Reveal the location of any player struck by the dart.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="cypher_x.webp" alt="Image_SKILL"> X</span><span class="keybindword">NEURAL THEFT</span></p>
+        <p class="description">INSTANTLY use on a targeted dead enemy to download information on their team. After a brief delay, the location of all living enemy players will be Revealed twice.</p>
+      </div>
+    </li>
+    <section id="section20"></section>
+    <p class="para2"></p>   
+    <li>
+      <div class="item">
+        <img src="sage.webp" alt="Image 3">
+        <h3>SAGE</h3>
+        <p>	The bastion of China, Sage creates safety for herself and her team wherever she goes. Able to revive fallen friends and stave off aggressive pushes, she provides a calm center to a hellish fight.</p>
+        <iframe width="900" height="500" src="https://www.youtube.com/embed/m1LpU1n9CXE" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="skillword">
+        <p class="skillwordmain"><span class="keybind"><img src="sage_C.webp" alt="Image_SKILL"> C</span><span class="keybindword">BARRIER ORB</span></p>
+        <p class="description">EQUIP a barrier orb. FIRE places a wall that fortifies after a few seconds. ALT FIRE rotates the targeter.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="sage_Q.webp" alt="Image_SKILL"> Q</span><span class="keybindword">SLOW ORB</span></p>
+        <p class="description">EQUIP a slowing orb. FIRE to throw a slowing orb forward that detonates upon landing, creating a lingering field that Slows players caught inside of it.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="sage_E.webp" alt="Image_SKILL"> E</span><span class="keybindword">HEALING ORB</span></p>
+        <p class="description">EQUIP a healing orb. FIRE with your crosshairs over a damaged ally to activate a Heal-Over-Time on them. ALT FIRE while Sage is damaged to activate a self Heal-Over-Time.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="sage_x.webp" alt="Image_SKILL"> X</span><span class="keybindword">RESURRECTION</span></p>
+        <p class="description">EQUIP a resurrection ability. FIRE with your crosshairs placed over a dead ally to begin resurrecting them. After a brief channel, the ally will be brought back to life with full health.</p>
+      </div>
+    </li>
+    <section id="section21"></section>
+    <p class="para2"></p>
+    <li>
+      <div class="item">
+        <img src="kj.webp" alt="Image 3">
+        <h3>KILLJOY</h3>
+        <p>	The genius of Germany, Killjoy secures the battlefield with ease using her arsenal of inventions. If the damage from her gear doesn't stop her enemies, her robots debuff will help make short work of them.</p>
+        <iframe width="900" height="500" src="https://www.youtube.com/embed/EGf9j563LjA" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="skillword">
+        <p class="skillwordmain"><span class="keybind"><img src="kj_C.webp" alt="Image_SKILL"> C</span><span class="keybindword">NANODSWARM</span></p>
+        <p class="description">EQUIP a Nanoswarm grenade. FIRE to throw the grenade. Upon landing, the Nanoswarm goes covert. ALT FIRE to lob. ACTIVATE the Nanoswarm to deploy a damaging swarm of nanobots.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="kj_Q.webp" alt="Image_SKILL"> Q</span><span class="keybindword">ALARMBOT</span></p>
+        <p class="description">EQUIP a covert Alarmbot. FIRE to deploy a bot that hunts down enemies that get in range. After reaching its target, the bot explodes and applies Vulnerable to enemies in the area. HOLD EQUIP to recall a deployed bot.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="kj_E.webp" alt="Image_SKILL"> E</span><span class="keybindword">TURRET</span></p>
+        <p class="description">EQUIP a Turret. FIRE to deploy a turret that fires at enemies in a 180 degree cone. ALT FIRE to swap turret direction. HOLD EQUIP to recall the deployed turret.</p>
+        <p class="skillwordmain"><span class="keybind"><img src="kj_x.webp" alt="Image_SKILL"> X</span><span class="keybindword">LOCKDOWN</span></p>
+        <p class="description">EQUIP the Lockdown device. FIRE to deploy the device. After a long windup, the device Detains all enemies caught in the radius. The device can be destroyed by enemies.</p>
+      </div>
+    </li>
+    
+    
+
+  </ul>
+  </head>
+
+
+
+
+  <body>
+   
+  </body>
+
+
+</html>
