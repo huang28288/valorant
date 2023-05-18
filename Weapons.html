@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Valor.gg</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Weapons_style.css">
+    
+
+
+
+
+    <header>
+      <h1>
+          <nav>
+              <ul>
+                <div>
+                  <img src="home button.png" alt="homebutton" class="homebutton">
+                  <a href="valor.html">
+                      <img src="Logo_merah.jpg" alt="Valor.gg logo" class="logomerah">
+                  </a>
+                </div>
+                    <a href="Weapons.html">
+                      <button class="navbtn">Weapons</button>
+                    </a>
+
+                    <a href="Maps.html">
+                      <button class="navbtn">Maps</button>
+                    </a>
+
+                    <a href="Agent.html">
+                      <button class="navbtn">Agents</button>
+                    </a>
+              </ul>
+          </nav>
+          
+      </h1>
+  </header>
+
+  <div class="sidebar">
+    <ul>
+      <li><a href="#section1">Sidearms</a></li>
+      <li><a href="#section1"><img src="Classic_icon.webp" class="gunicon1"></a></li>
+      <li><a href="#section2"><img src="Shorty_icon.webp" class="gunicon1"></a></li>
+      <li><a href="#section3"><img src="Frenzy_icon.webp" class="gunicon1"></a></li>
+      <li><a href="#section4"><img src="Ghost_icon.webp" class="gunicon1"></a></li>
+      <li><a href="#section5"><img src="Sheriff_icon.webp" class="gunicon1"></a></li>
+      <p class="para3"></p>
+      <li><a href="#section6">SMGs</a></li>
+      <li><a href="#section6"><img src="Stinger_icon.webp" class="gunicon2"></a></li>
+      <li><a href="#section7"><img src="Spectre_icon.webp" class="gunicon2"></a></li>
+      <p class="para3"></p>
+      <li><a href="#section8">Shotguns</a></li>
+      <li><a href="#section8"><img src="Bucky_icon.webp" class="gunicon3"></a></li>
+      <li><a href="#section9"><img src="Judge_icon.webp" class="gunicon3"></a></li>
+      <p class="para3"></p>
+      <li><a href="#section10">Rifles</a></li>
+      <li><a href="#section10"><img src="Bulldog_icon.webp" class="gunicon3"></a></li>
+      <li><a href="#section11"><img src="Guardian_icon.webp" class="gunicon3"></a></li>
+      <li><a href="#section12"><img src="Phantom_icon.webp" class="gunicon3"></a></li>
+      <li><a href="#section13"><img src="Vandal_icon.webp" class="gunicon3"></a></li>
+      <p class="para3"></p>
+      <li><a href="#section14">Sniper Rifles</a></li>
+      <li><a href="#section14"><img src="Marshal_icon.webp" class="gunicon3"></a></li>
+      <li><a href="#section15"><img src="Operator_icon.webp" class="gunicon3"></a></li>
+      <p class="para3"></p>
+      <li><a href="#section16">LMGs</a></li>
+      <li><a href="#section16"><img src="Ares_icon.webp" class="gunicon3"></a></li>
+      <li><a href="#section17"><img src="Odin_icon.webp" class="gunicon3"></a></li>
+      <p class="para3"></p>
+      <li><a href="#section18">Melees</a></li>
+      <li><a href="#section18"><img src="Knife_icon.webp" class="gunicon3"></a></li>
+    </ul>
+  </div>
+
+  
+  <script>
+    // Smooth scrolling on click
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+
+  <script>
+    const sidebar = document.querySelector('.sidebar');
+    
+    sidebar.addEventListener('wheel', (e) => {
+      if (sidebar.scrollHeight > sidebar.clientHeight) {
+        e.preventDefault();
+        
+        const maxScrollTop = sidebar.scrollHeight - sidebar.clientHeight;
+        const delta = Math.sign(e.deltaY);
+        sidebar.scrollTop += delta * 90;
+        
+        // Prevent scrolling the main content when at the top or bottom of the sidebar
+        if ((delta === -1 && sidebar.scrollTop === 0) ||
+            (delta === 1 && sidebar.scrollTop === maxScrollTop)) {
+          e.stopPropagation();
+        }
+      }
+    });
+  </script>
+
+
+<ul class="list">
+  <section id="section1"></section>
+  <p class="para1"></p>
+  <div class="roles">Sidearms</div>   
+  <li>
+      <div class="item">
+        <img src="Classic.webp" alt="Image 3">
+        <h3>CLASSIC</h3>
+        <p>The Classic is a pistol that all players receive upon spawning. It has two firing modes, a standard semi-automatic single-bullet primary fire and a semi-automatic shotgun alternate fire that fires three bullets instantly but only at around a third of its usual fire rate.
+
+          Despite what may be suggested about its strength by the Classic being the gun given away for free, it is actually a versatile sidearm. Whilst the other sidearms are usually suited for a particular range, the Classic can be used in medium range engagements thanks to its large falloff range but can also quickly dispatch an enemy at close range using its shotgun mode. If a player isn't expecting to take fights at one specific range, the Classic's versatility can entice them into keeping it over upgrading to another sidearm, allowing them to use their creds on shields or abilities instead.
+        </p>
+        <div class="test">
+          <p>Stats</p>
+          <p>Headshot multiplier: x3</p> 
+          <p>Leg shot multiplier: x0.85</p>
+          <p>30+ m falloff multiplier: x0.846 (11/13)</p>
+        </div>
+        <p></p>
+        <iframe width="900" height="500" src="https://www.youtube.com/embed/h4rQYkDKsVg" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </li>
+
+  <section id="section2"></section>
+  <p class="para2"></p>  
+    <li>
+        <div class="item">
+          <img src="Shorty.webp" alt="Image 3">
+          <h3>SHORTY</h3>
+          <p>The Shorty is the cheapest purchasable weapon in the game. As a sidearm equivalent of a shotgun, it is most effective at short range to instantly take an enemy by surprise. With good damage and functionality despite its low price tag, it can even be used to catch out a fully-bought enemy in eco rounds, allowing the player to gain a powerful weapon upgrade for very little investment.
+
+            As happens with all shotguns due to their pellet spread though, the Shorty is effectively useless at long ranges, as well having the range of its pellets capped and unable to reach any opponent beyond 50 meters. The Shorty especially also has limited use due to its high pellet spread at medium range and only being able to hold 2 shells at a time, meaning it cannot effectively be used in sustained firefights against multiple enemies.
+            
+          </p>
+          <div class="test">
+           <p> Stats</p>
+           <p>Headshot multiplier: x2</p> 
+           <p>Leg shot multiplier: x0.85</p>
+           <p>7 to 15 m falloff multiplier: x0.667 (2/3)</p> 
+           <p>15+ m falloff multiplier: x0.25</P>
+          </div>
+          <p></p>
+          <iframe width="900" height="500" src="https://www.youtube.com/embed/D3r67LB3Kz4" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </li>
+
+<section id="section3"></section>
+<p class="para2"></p>   
+    <li>
+        <div class="item">
+          <img src="Frenzy.webp" alt="Image 3">
+          <h3>FRENZY</h3>
+          <p>The Frenzy is a low-cost automatic pistol. As a sidearm equivalent of an SMG, it's not too punishing to use on the move at short ranges, making it most effective at that range and the best sidearm to use in such scenarios, though to challenge enemies who have full-bought getting headshots will most likely be necessary.
+
+            Its high rate of fire and small magazine size however means it will run out quickly and, unless controlled exceptionally well, isn't great at taking out multiple enemies at once. This makes it especially risky to spray through vision blockers with if using it during a pistol or eco round as the player is much more likely to run out of ammo than most other weapons.
+            
+          </p>
+        <div class=" test">
+          <P>Stats</P>
+          <p>Headshot multiplier: x3</p> 
+          <p>Leg shot multiplier: x0.85</p>
+          <p>20+ m falloff multiplier: x0.808 (21/26)</p> 
+        </div>
+        <p></p>
+          <iframe width="900" height="500" src="https://www.youtube.com/embed/RRzU_FgSkVc" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </li>
+
+<section id="section4"></section>
+<p class="para2"></p>  
+    <li>
+          <div class="item">
+            <img src="Ghost.webp" alt="Image 3">
+            <h3>GHOST</h3>
+            <p>
+              The Ghost is a low-cost semi-automatic pistol. Equipped with a large magazine and a silencer, it can be used to spam through vision blockers without much risk to the player's ammo count or positioning.
+
+              Whilst proficient at all ranges, it is especially good for picking off long-range enemies, though at shorter ranges it does not offer much more power than a Classic outside of pistol rounds. Compared to the costlier Sheriff, the Ghost is less powerful in pistol rounds but isn't too far behind in power when used against fully-shielded enemies unless you can hit your headshots. The Ghost's higher fire rate, larger magazine capacity, and lower max spread also make it more forgiving if the player misses some of their shots.
+            </p>
+            <div class="test">
+              <P>Stats</P>
+              <p>Headshot multiplier: x3.5</p> 
+              <p>Leg shot multiplier: x0.85</p>
+              <p>30+ m falloff multiplier: x0.833 (5/6)</p> 
+            </div>
+            <p></p>
+            <iframe width="900" height="500" src="https://www.youtube.com/embed/S31RAY74ysM" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </li>
+
+<section id="section5"></section>
+<p class="para2"></p>  
+        <li>
+              <div class="item">
+                <img src="Sheriff.webp" alt="Image 3">
+                <h3>SHERIFF</h3>
+                <p>
+                  The Sheriff is a semi-automatic revolver and the most expensive sidearm in the game. Able to kill enemies with a single bullet to the head at most ranges and health totals, it can be used to challenge even enemies who have full-bought. It's high penetration and extra reserve magazine also makes it useful for spamming for wallbangs during pistol or eco rounds. With a low-capacity magazine and low fire rate however, even one missed shot can end up being punishing. The Sheriff's high recoil and spread also promotes exceptional control and precision in order to use it when fighting multiple enemies.
+                </p>
+                <div class="test">
+                  <P>Stats</P>
+                  <p>Headshot multiplier: x2.9</p> 
+                  <p>Leg shot multiplier: x0.85</p>
+                  <p>30+ m falloff multiplier: x0.909 (10/11)</p> 
+                </div>
+                <p></p>
+                <iframe width="900" height="500" src="https://www.youtube.com/embed/mBXL3Zv-pDw" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </li>
+
+<section id="section6"></section>  
+<p class="para1"></p>
+<div class="roles">SUBMACHINE GUNS</div>   
+            <li>
+                  <div class="item">
+                    <img src="Stinger.webp" alt="Image 3">
+                    <h3>STINGER</h3>
+                    <p>The Stinger is a low-cost SMG. It has two firing modes, a standard automatic single-bullet primary fire and a semi-automatic burst-mode alternate fire that fires four bullets in a burst at around an eighth of its usual fire rate. Alternate fire also increases the distance that falloff damage begins to occur at.</p>
+                    <p>As an SMG, the Stinger is most effective at shorter range or when used on the move. It's high fire rate makes it great for taking out single targets when buying light and can be used to surprise an enemy in tight spaces, allowing the player to gain a weapon upgrade for little investment thanks to the Stinger's cheap cost.</p>
+                    <p>Compared to the costlier Spectre SMG, the Stinger is not completely outshone as its power comes with its ability to kill individual agents quickly. However, the Stinger's lower magazine capacity and higher fire rate make it unsuitable for sustained firefights against multiple enemies, given that a magazine will empty in just over a second. Its higher spread values also mean the Spectre can have more precision when looking to eliminate single targets at longer ranges, meaning the Stinger is more suited to fights in close-quarters. Also, despite ADS and burst often being associated with better precision at long range, the Stinger's alternate fire is affected by recoil within the burst itself, meaning exceptional control is needed to ensure all of the burst's bullets hit the target at longer ranges.</p>
+                    <div class="test">
+                      <P>Stats</P>
+                      <p>Headshot multiplier: x2.5</p> 
+                      <p>Leg shot multiplier: x0.85</p>
+                      <p>15+ m falloff multiplier: x0.926 (25/27)</p>
+                    </div> 
+                    <p></p>
+                    <iframe width="900" height="500" src="https://www.youtube.com/embed/qxzzC-xGnZw" frameborder="0" allowfullscreen></iframe>
+                  </div>
+                </li>
+
+<section id="section7"></section>
+<p class="para2"></p>  
+                <li>
+                      <div class="item">
+                        <img src="Spectre.webp" alt="Image 3">
+                        <h3>SPECTRE</h3>
+                        <p>The Spectre is a moderately-priced SMG. Equipped with a large magazine and a silencer, it can be used to spam through vision blockers without much risk to the player's ammo count or positioning.</p>
+                        <p>As an SMG, the Spectre is most effective at shorter range or when used on the move, though it has decent stats and features all-round to make it usable at medium to long range as well. As a more expensive SMG and expected upgrade to the Stinger, the Spectre's higher magazine capacity and accuracy makes it a better option for eliminating single targets at longer ranges or in sustained firefights against multiple enemies. However, the Spectre's lower fire rate makes the Stinger a more suitable choice for killing individual agents at close range.</p>
+                        <p>In comparison to the similarly-priced Ares, the Spectre has more mobility and lower initial spread but cannot compete with an Ares player in a sustained firefight, though the Spectre is quicker at wiping out enemies with headshots at close range.</p>
+                        <div class="test">
+                          <P>Stats</P>
+                          <p>Headshot multiplier: x3</p> 
+                          <p>Leg shot multiplier: x0.85</p>
+                          <p>15+ m falloff multiplier: x0.846 (11/13)</p> 
+                          <p>30+ m falloff multiplier: x0.769 (10/13)</P>
+                        </div>
+                        <p></p>
+                        <iframe width="900" height="500" src="https://www.youtube.com/embed/w8N1yGoj5cA" frameborder="0" allowfullscreen></iframe>
+                      </div>
+                    </li>
+
+<section id="section8"></section>  
+<p class="para1"></p>
+<div class="roles">SHOTGUNS</div>  
+                    <li>
+                          <div class="item2">
+                            <img src="Bucky.webp" alt="Image 3">
+                            <h3>BUCKY</h3>
+                            <p>The Bucky is a low-cost shotgun and the cheapest primary weapon in the game. It has two firing modes, a standard single-shell primary fire and a canister alternate fire that allows the shell to travel a short distance before spraying its pellets instead of immediately spraying from the barrel of the gun, allowing the user to deal some damage to targets at medium range. Shells shot using Alternate Fire only produce a reduced amount of pellets however, and enemies hit by the canister before it reaches the required distance to explode will only take 1 pellet worth of damage.</p>
+                            <p>As a pump action shotgun, the Bucky is reloaded one shell at a time. Because the Bucky's reload time is also shorter than it's fire rate, this means that a user can reload a shell in between shots, effectively increasing the magazine's capacity to the entire available reserve.</p>
+                            <p>As with all shotguns due to their pellet spread, the Bucky is effectively useless at long ranges, as well having the range of its pellets capped and unable to reach any opponent beyond 50 meters (Alt Fire measures this distance from where the canister explodes instead). The Bucky especially has a low fire rate, meaning it cannot effectively be used against multiple enemies at once, which is a task better served by the Bucky's direct upgrade, the Judge.</p>
+                            <div class="test">
+                              <P>Stats</P>
+                              <p>Headshot multiplier: x2</p> 
+                              <p>Leg shot multiplier: x0.85</p>
+                              <p>8 TO 12 m falloff multiplier: x0.65</p> 
+                              <p>12+ m falloff multiplier: x0.45</P>
+                            </div>
+                            <p></p>
+                            <iframe width="900" height="500" src="https://www.youtube.com/embed/aRcMMOKe9FA" frameborder="0" allowfullscreen></iframe>
+                          </div>
+                        </li>
+
+<section id="section9"></section>
+<p class="para2"></p>  
+                   <li>
+                              <div class="item2">
+                                <img src="Judge.webp" alt="Image 3">
+                                <h3>JUDGE</h3>
+                                <p>The Judge is a moderately-priced automatic shotgun. It is best used in situations that put the user in close range against multiple enemies, being able to wipe them out quickly should they risk not clearing such small areas beforehand. As with all shotguns, the Judge has pellet spread that can be reduced by crouching, though the spread still makes it effectively useless at long ranges no matter what. Unlike the other shotguns however, the Judge does not have a distance cap on its pellets and can hit enemies beyond 50 meters.</p>
+                                <p>As a more expensive shotgun and expected upgrade to the Bucky, the Judge's higher rate of fire makes it a better option for taking on multiple enemies at once. However, the Judge's lower effective magazine capacity and lower damage makes the Bucky a more suitable choice in sustained firefights or for taking out individual targets.</p>
+                                <div class="test">
+                                  <P>Stats</P>
+                                  <p>Headshot multiplier: x2</p> 
+                                  <p>Leg shot multiplier: x0.85</p>
+                                  <p>10 TO 15 m falloff multiplier: x0.588 (10/17)</p> 
+                                  <p>15+ m falloff multiplier: x0.412 (7/17)</P>
+                                </div>
+                                <p></p>
+                                <iframe width="900" height="500" src="https://www.youtube.com/embed/EEaV7BFlB00" frameborder="0" allowfullscreen></iframe>
+                              </div>
+                            </li>
+
+<section id="section10"></section>  
+<p class="para1"></p>
+<div class="roles">RIFLES</div> 
+                            <li>
+                                  <div class="item2">
+                                    <img src="Bulldog.webp" alt="Image 3">
+                                    <h3>BULLDOG</h3>
+                                    <p>The Bulldog is a moderately-priced rifle. It has two firing modes, a standard automatic single-bullet primary fire and a semi-automatic burst-mode alternate fire that fires three bullets in an accurate burst at around a fifth of its usual fire rate.</p>
+                                    <p>The Bulldog can be a good option when you're not saving but the rest of your team has stronger buys for the round whilst you don't have the creds to buy a more expensive rifle. However, all the other rifles are upgrades over the Bulldog when they can be purchased; players looking to tap heads with the Bulldog's burst fire can use the Guardian instead, with higher accuracy, damage, and penetration, whilst general short-mid range combat is better suited for the Phantom and Vandal with their higher rates of fire.</p>
+                                    <div class="test">
+                                      <P>Stats</P>
+                                      <p>Headshot multiplier: x3.3</p> 
+                                      <p>Leg shot multiplier: x0.85</p>
+                                    </div>
+                                    <p></p>
+                                    <iframe width="900" height="500" src="https://www.youtube.com/embed/b3oGyLDcNsQ" frameborder="0" allowfullscreen></iframe>
+                                  </div>
+                                </li>
+
+<section id="section11"></section>
+<p class="para2"></p>  
+        <li>
+              <div class="item2">
+                <img src="Guardian.webp" alt="Image 3">
+                <h3>GUARDIAN</h3>
+                <p>The Guardian is a moderately-priced semi-automatic rifle. It is most effective in long-range fights in the hands of players who are confident in their ability to hit headshots at such distances, being more accurate than a Vandal. The Guardian's high penetration also makes it useful for getting wallbang kills. In short to medium range fights however, the Guardian cannot compete with the Phantom or Vandal due to their higher rates of fire.</p>
+                <div class="test">
+                  <P>Stats</P>
+                  <p>Headshot multiplier: x3</p> 
+                  <p>Leg shot multiplier: x0.75</p>
+                </div>
+                <p></p>
+                <iframe width="900" height="500" src="https://www.youtube.com/embed/8qEE4NCgPtA" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </li>
+
+<section id="section12"></section>
+<p class="para2"></p>  
+        <li>
+              <div class="item2">
+                <img src="Phantom.webp" alt="Image 3">
+                <h3>PHANTOM</h3>
+                <p>The Phantom is a high-cost automatic rifle. One of VALORANT's best general-purpose weapons, it is most effective at short to medium range where it is able to spray down multiple enemies at once due to its high rate of fire. It also comes equipped with a silencer, allowing it to be used to spam through vision blockers without much risk to the player's ammo count or positioning.</p>
+                <p>The Phantom is able to instantly kill an enemy with a single headshot, but its damage falloff means this no longer becomes the case at medium to long ranges. Players hitting the initial headshot but failing to hit a second killing shot before they die themselves may find the Vandal preferable in such situations.</p>
+                <div class="test">
+                  <P>Stats</P>
+                  <p>Headshot multiplier: x4</p> 
+                  <p>Leg shot multiplier: x0.85</p>
+                  <p>15 TO 30 m falloff multiplier: x0.897 (35/39)</p> 
+                  <p>30+ m falloff multiplier: x0.795 (31/39)</P>
+                </div>
+                <p></p>
+                <iframe width="900" height="500" src="https://www.youtube.com/embed/hcIeopbR-Cw" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </li>
+
+<section id="section13"></section>
+<p class="para2"></p>  
+        <li>
+              <div class="item2">
+                <img src="Vandal.webp" alt="Image 3">
+                <h3>VANDAL</h3>
+                <p>The Vandal is a high-cost automatic rifle. One of VALORANT's best general-purpose weapons, it is most effective at picking off individual targets at longer ranges due to having no falloff, allowing it to kill any enemy with a single headshot at all ranges.</p>
+                <p>Compared to VALORANT's other general-purpose rifle, the Phantom, the Vandal is guaranteed to instantly kill an enemy with one bullet to the head whereas the Phantom's damage falloff results in it requiring multiple bullets at medium to long range to get headshot kills. However, the Phantom's higher fire rate and accuracy make it better at taking on multiple enemies at short to medium ranges over the Vandal.</p>
+                <div class="test">
+                  <P>Stats</P>
+                  <p>Headshot multiplier: x4</p> 
+                  <p>Leg shot multiplier: x0.85</p>
+                </div>
+                <p></p>
+                <iframe width="900" height="500" src="https://www.youtube.com/embed/4J7qmh6lM_0" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </li>
+
+<section id="section14"></section>  
+<p class="para1"></p>
+<div class="roles">SNIPER RIFLES</div> 
+        <li>
+              <div class="item2">
+                <img src="Marshal.webp" alt="Image 3">
+                <h3>Marshal</h3>
+                <p>The Marshal is a low cost sniper rifle. As a sniper, it has a scope with a single zoom setting on its Alternate Fire mode that has perfect accuracy when standing still. Despite sniper rifles usually being extremely inaccurate when used in Primary Fire mode, the Marshal is surprisingly accurate in this case, meaning it can be used to take on multiple enemies at once so long as the user can hit their shots.</p>
+                <p>As a lever action sniper rifle, the Marshal is reloaded one bullet at a time. Because the Marshal's reload time is also shorter than it's fire rate, this means that a user can reload a bullet in between shots, effectively increasing the magazine's capacity to the entire available reserve.</p>
+                <p>Compared to the costlier Operator, the Marshal's is better at fighting multiple enemies due to its higher fire rate, but this would require exceptional aim from ther user as they will need to hit headshots instead. The Operator meanwhile deals much more damage that allows it to instantly kill enemies with a body shot as well as headshots, whereas the Marshal can only do this against unshielded enemies.</p>
+                <div class="test">
+                  <P>Stats</P>
+                  <p>Headshot multiplier: x2</p> 
+                  <p>Leg shot multiplier: x0.85</p>
+                </div>
+                <p></p>
+                <iframe width="900" height="500" src="https://www.youtube.com/embed/ybyxAO2vVdI" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </li>
+
+<section id="section15"></section>
+<p class="para2"></p>  
+        <li>
+              <div class="item2">
+                <img src="Operator.webp" alt="Image 3">
+                <h3>OPERATOR</h3>
+                <p>The Operator is a high-cost sniper rifle and the most expensive gun in the game. As a sniper, it has a scope with two zoom settings on its Alternate Fire mode that has perfect accuracy when standing still. The Operator's Primary Fire accuracy on the other hand is extremely inaccurate.</p>
+                <p>The Operator's power comes from its high-damage bullets, being able to instantly kill any enemy with a single shot to the body, though with its low rate of fire every missed shot comes with a cost. Compared to the Marshal, which can only instantly kill shielded enemies with headshots, the Operator is also better at picking off enemies with wallbang shots due to its higher penetration.</p>
+                <div class="test">
+                  <P>Stats</P>
+                  <p>Headshot multiplier: x1.7</p> 
+                  <p>Leg shot multiplier: x0.8</p>
+                </div>
+                <p></p>
+                <iframe width="900" height="500" src="https://www.youtube.com/embed/V_vIV5RCUzc" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </li>
+
+<section id="section16"></section>  
+<p class="para1"></p>
+<div class="roles">MACHINE GUN</div> 
+        <li>
+              <div class="item2">
+                <img src="Ares.webp" alt="Image 3">
+                <h3>ARES</h3>
+                <p>The Ares is a medium-cost machine gun. Unlike most other guns that gets less accurate as you continuously fire more bullets from them, the Ares is the only gun in the game that gets more accurate as it is continuously fired. As a machine gun, it is most effective as either a defensive tool to hold a site or when used to get wallbang kills due to its high penetration, rate of fire, and magazine capacity. Their lower mobility and longer equip speeds however make them less suited for peeking or entering sites, something better served by SMGs at the price of an Ares.</p>
+                <p>In comparison to the similarly-priced Spectre, the Ares is better at a distance due to its low damage falloff but cannot compete with a Spectre player who can hit their headshots at close range. The Ares is also less mobile and has much more initial spread.</p>
+                <p>Compared to the costlier Odin, the Ares is not completely outshone thanks to its unique reverse accuracy feature. However, the Odin's higher damage, fire rate, and initial accuracy far outweigh the benefits of the Ares, though a heavy price will need to be paid for the upgrade.</p>
+                <div class="test">
+                  <P>Stats</P>
+                  <p>Headshot multiplier: x2.4</p> 
+                  <p>Leg shot multiplier: x0.85</p>
+                  <p>30+ m falloff multiplier: x0.933 (14/15)</p> 
+                </div>
+                <p></p>
+                <iframe width="900" height="500" src="https://www.youtube.com/embed/iulVVlRDuuw" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </li>
+
+<section id="section17"></section>
+<p class="para2"></p>  
+        <li>
+              <div class="item2">
+                <img src="Odin.webp" alt="Image 3">
+                <h3>ODIN</h3>
+                <p>The Odin is a high-cost machine gun. When using Primary Fire, the Odin's fire rate will increase over the duration the weapon is fired to a maximum amount, but using Alternate Fire will allow the user to shoot at that maximum fire rate immediately.</p>
+                <p>As a machine gun, the Odin is most effective as either a defensive tool to hold a site or when used to get wallbang kills due to its high penetration, rate of fire, and magazine capacity. Their lower mobility and longer equip speeds however make them less suited for peeking or entering sites, something better served at such a price by rifles like the Phantom or Vandal.</p>
+                <p>As a more expensive machine gun compared to the Ares, the Odin is a direct upgrade, offering more damage, higher rates of fire, and higher initial accuracy, with the only benefit to the Ares being its unique reverse accuracy feature. However, these upgrades come at a heavy cost, with the Odin being the second-most expensive weapon in the game, more than any rifle.</p>
+                <div class="test">
+                <P>Stats</P>
+                  <p>Headshot multiplier: x2.5</p> 
+                  <p>Leg shot multiplier: x0.85</p>
+                  <p>30+ m falloff multiplier: x0.816 (31/38)</p>
+                </div> 
+                <p></p>
+                <iframe width="900" height="500" src="https://www.youtube.com/embed/SnmT2qYK6hk" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </li>
+
+<section id="section18"></section>  
+<p class="para1"></p>
+<div class="roles">MELEE</div> 
+        <li>
+              <div class="item">
+                <img src="TacticalKnife.webp" alt="Image 3">
+                <h3>KNIFE</h3>
+                <p>The Tactical Knife is a base melee weapon provided to every player, and cannot be dropped. It has two modes of fire: one being a fast slashing motion, and the other being a sharp jab. The primary slash has a three swing combo that loops, while the alternate slash deals more damage in a single strike but with a longer recovery and slightly smaller range and hitbox. The weapon also deals double damage when striking the target's back.</p>
+                <p>Scoring a kill with this weapon rewards the same number of creds as a regular kill. All kills with any weapon skin using Tactical Knife will use the standard kill banner.</p>
+                <p>Unlike guns, which reduce a player's movement speed whilst equipped, the player remains at the standard run speed of 6.75 m/s whilst they have this weapon equipped, meaning it is the fastest weapon to run with in standard gameplay.</p>
+                <p></p>
+                <iframe width="900" height="500" src="https://www.youtube.com/embed/jaDRQMWS2NQ" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </li>
+</html>

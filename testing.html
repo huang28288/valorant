@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Website</title>
+    <style>
+      /* Styling for navigation bar and dropdowns */
+      nav {
+        background-color: #333;
+        overflow: hidden;
+      }
+      nav a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      nav .dropdown {
+        float: right;
+        display: inline-block;
+      }
+      nav .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      nav .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      nav .search-container {
+        float: right;
+      }
+      nav input[type=text] {
+        padding: 6px;
+        margin-top: 8px;
+        font-size: 17px;
+        border: none;
+      }
+      nav button[type=submit] {
+        float: right;
+        padding: 6px 10px;
+        margin-top: 8px;
+        margin-right: 16px;
+        background-color: #555;
+        color: white;
+        font-size: 17px;
+        border: none;
+        cursor: pointer;
+      }
+      nav button[type=submit]:hover {
+        background-color: #ddd;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="#">Home</a>
+      <div class="dropdown">
+        <a href="#">Dropdown 1</a>
+        <div class="dropdown-content">
+          <a href="#">Option 1.1</a>
+          <a href="#">Option 1.2</a>
+          <a href="#">Option 1.3</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="#">Dropdown 2</a>
+        <div class="dropdown-content">
+          <a href="#">Option 2.1</a>
+          <a href="#">Option 2.2</a>
+          <a href="#">Option 2.3</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="#">Dropdown 3</a>
+        <div class="dropdown-content">
+          <a href="#">Option 3.1</a>
+          <a href="#">Option 3.2</a>
+          <a href="#">Option 3.3</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="#">Dropdown 4</a>
+        <div class="dropdown-content">
+          <a href="#">Option 4.1</a>
+          <a href="#">Option 4.2</a>
+          <a href="#">Option 4.3</a>
+        </div>
+      </div>
+      <div class="search-container">
+        <form>
+          <input type="text" placeholder="Search...">
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+    <div style="height:5000px;">
+      <!-- Placeholder content to create scrollbar -->
+    </div>
+  </body>
+</html>

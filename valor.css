@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+body{
+	background-color:#1B1D2E;
+	background-attachment: fixed;
+	overflow-y: auto;
+}
+.logomerah{
+	float: left;
+	width: 100px;
+	height: 40px;
+	margin-left: -104px;
+	margin-top: 7px;
+	opacity: 0;
+	z-index: 999;
+}
+
+.logomerah:hover{
+	opacity: 1;
+	transition: 100ms ease-in-out;
+	z-index:999;
+}
+
+.homebutton{
+	float: left;
+	width: 110px;
+	height: 40px;
+	margin-left: 14px;
+	margin-top: 7px;
+	z-index: 998;
+}
+
+
+nav {
+	position: fixed;
+    justify-content: flex-end;
+	top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #292929;
+	height: 55px;
+	z-index: 997;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+li {
+	float: left;
+}
+
+.navbtn {	
+	cursor: pointer;
+	position: relative;
+	display: flex;
+	margin-top: 6px;
+	background-color: #292929;
+	color:#ffeee5;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	font-weight: 900;
+	text-align: center;
+	padding: 10px 30px;
+	border: none;
+	border-radius: 10px;
+	text-decoration: none;
+	z-index: 1;
+	float: right;
+}
+
+.navbtn::before {
+	content: '';
+	position: absolute;
+	border-radius: 10px;
+	top: 5px;
+	bottom: 5px;
+	left: 0;
+	right: 0;
+	background-color: #3f3f3f;
+	z-index: -1;
+	transition: transform 50ms ease-in-out;
+	transform: scaleX(0);
+	transform-origin: left;
+}
+
+.navbtn:hover::before,
+.navbtn:focus::before {
+	transform: scaleX(1);
+}
+
+
+.valointro{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	color:#ffeee5; 
+	padding: 0px 0px;
+	margin-left: 750px;
+	margin-right: 300px;
+	margin-top: -100px;
+}
+
+
+.jett img{
+	width: 21%;
+	height: auto;
+	margin-left: 300px;
+	margin-top: -550px;
+	transition: transform 0.2s ease-in-out;
+}
+
+.jett
+
+.jett img.animate {
+	transition-delay: 0.1s;
+	transform: translate3d(0, 5px, 0);
+  }
+
+.pheonix{
+	margin-left: 130px;
+	margin-top: -530px;
+}
+
+.para1{
+	padding: 0.5px;
+	margin-top: 100px;
+	margin-right: 400px;
+	margin-left:400px;
+	background-color:antiquewhite;
+}
+
+.introtovalorgg{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	text-align:center;
+	margin-top: 100px;
+	color:#ffeee5;
+}
+
+.agent{
+	margin-left: 500px;
+	margin-right: auto;
+	transition: transform 0.8 ease-in-out;
+}
+
+.agent:hover{
+	transform: scale(1.1);
+	z-index: 1;
+}
+
+.maps{
+	margin-top: 40px;
+	margin-left: 140px;
+	margin-right: auto;
+	transition: transform 0.8 ease-in-out;
+}
+
+.maps:hover{
+	transform: scale(1.1);
+	z-index: 1;
+}
+
+.weapons{
+	margin-left: 90px;
+	margin-right: auto;
+	transition: transform 0.8 ease-in-out;
+}
+
+.weapons:hover{
+	transform: scale(1.1);
+	z-index: 1;
+}
+
+.patchs{
+	margin-left: 410px;
+	margin-top: 90px;
+	height: 20%;
+	width: 20%;
+}
+
+.patchs:hover{
+	opacity: 0.4;
+	transition: 100ms ease-in-out;
+	z-index: 1;
+	
+}
+
+.patchword{
+	margin-left: 1000px;
+	margin-top: -200px;
+	font-family: 'Montserrat', sans-serif;
+	color:#ffeee5;
+	font-size: 22px;
+	font-weight: bold;
+	opacity: 0.9;
+}
+
+
+.subnotes{
+	font-size: 13.5px;
+	color: #ffeee5;
+	padding-top: -10px;
+	opacity: 0.7;
+}
+
+.patchword2{
+	margin-left: 1000px;
+	margin-top: -230px;
+	font-family: 'Montserrat', sans-serif;
+	color:#ffeee5;
+	font-size: 21px;
+	font-weight: bold;
+	opacity: 0.9;
+}
+
+.patchword3{
+	margin-left: 1000px;
+	margin-top: -240px;
+	margin-bottom: 90px;
+	font-family: 'Montserrat', sans-serif;
+	color:#ffeee5;
+	font-size: 21px;
+	font-weight: bold;
+	opacity: 0.9;
+}
+
+.endpage{
+	text-align: center;
+	font-size: 35px;
+	color:#b8b8b8;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	z-index: 1;
+}
+
+.plswork{
+	margin-bottom: 0;
+	top: 0;
+    left: 0;
+    width: 100%;
+	background-color: #292929;
+    text-align: center;
+    padding: 40px;
+	z-index: -1;
+}
+
+html::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  html::-webkit-scrollbar-track {
+    border-radius: 8px;
+    background-color: #e7e7e7;
+    border: 1px solid #cacaca;
+  }
+
+  html::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: #d55959;
+  }

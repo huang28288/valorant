@@ -1,0 +1,50 @@
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #f9f9f9;
+    font-size: 18px;
+    color: #333;
+    position: relative; /* set the parent element as relative */
+  }
+  
+  .menu li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative; /* set the list item as relative */
+  }
+  
+  .menu li a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+  }
+  
+  .menu .dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0; /* align the dropdown menu to the right */
+  }
+  
+  .menu .dropdown .dropdown-menu {
+    position: absolute;
+    top: 0; /* align the dropdown menu to the top */
+    left: 0;
+    display: none;
+    background-color: #f9f9f9;
+  }
+  
+  .menu .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .menu .dropdown .dropdown-menu li {
+    margin: 0;
+    display: block; /* display the nested list items in a straight line */
+  }
+  
+  .menu .dropdown .dropdown-menu li a {
+    color: #333;
+    padding: 10px;
+  }
